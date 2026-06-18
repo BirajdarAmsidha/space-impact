@@ -550,7 +550,7 @@ function playerDied() {
     olScore.style.display = 'block';
     olScore.textContent = `SCORE: ${score}  HI: ${hiScore}`;
     olBody.innerHTML = '';
-    olPress.textContent = 'PRESS SPACE TO RETRY';
+    olPress.textContent = 'PRESS SPACE TO RETRY THE GAME';
   } else {
     state = 'dead';
     overlay.classList.remove('hidden');
@@ -558,7 +558,7 @@ function playerDied() {
     olScore.style.display = 'block';
     olScore.textContent = `LIVES: ${'♥'.repeat(lives)}`;
     olBody.innerHTML = '';
-    olPress.textContent = 'PRESS SPACE TO CONTINUE';
+    olPress.textContent = 'PRESS SPACE TO CONTINUE THE GAME';
   }
 }
 
